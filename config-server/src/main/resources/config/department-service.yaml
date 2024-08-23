@@ -1,0 +1,15 @@
+#Server port for the department service
+server:
+  port: 8081
+
+#connects the department service as a client to the eureka server
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+#All the traces should be published to zipkin
+management:
+  tracing:
+    sampling:
+      probability: 1.0

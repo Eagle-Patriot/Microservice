@@ -1,0 +1,11 @@
+#port for the config server
+server:
+  port: 8088
+
+#Tell the application to get all its configuration from the application and not the default git hub
+spring:
+  profiles:
+    active: native
+
+
+

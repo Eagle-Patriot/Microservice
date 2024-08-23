@@ -1,0 +1,15 @@
+#Server port for the employee service
+server:
+  port: 8082
+
+#connects the employee service as a client to the eureka server
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+#All the traces should be published to zipkin
+management:
+  tracing:
+    sampling:
+      probability: 1.0
